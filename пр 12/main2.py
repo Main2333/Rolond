@@ -9,7 +9,6 @@ def wer(bukva):
             c += 1
         elif i in b:
             d += 1
-
     return c, d
 bukva = input("Введите текст: ")
 c, d = wer(bukva)
