@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Результаты</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="result-container">
+        <h1>Ваш результат</h1>
+        <p>Вы набрали {{ score }} из {{ total }} баллов.</p>
+        <a href="{{ url_for('index') }}">Попробовать снова</a>
+    </div>
+</body>
+</html>
